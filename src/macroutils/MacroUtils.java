@@ -214,7 +214,7 @@ public final class MacroUtils {
 
     private void saveSim(String name, boolean vo) {
         io.say.action(String.format("Saving Simulation File"), vo);
-        name = get.strings.fileBasename(name);
+        //name = get.strings.fileBasename(name);
         File f = new File(name + ".sim");
         if (!f.canWrite()) {
             f = new File(userDeclarations.simPath, f.getName());

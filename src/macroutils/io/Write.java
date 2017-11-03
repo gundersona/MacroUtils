@@ -49,9 +49,9 @@ public class Write {
     private boolean _tryWritePic(NamedObject no, String name, int resx, int resy, boolean vo) {
         if (name == null) {
             name = no.getPresentationName();
-        } else {
-            name = _get.strings.fileBasename(name);
-        }
+        } //else {
+            //name = _get.strings.fileBasename(name);
+        //}
         _io.say.object(no, vo);
         File f = new File(_ud.picPath, String.format("%s.%s", _getNewName(name), StaticDeclarations.PIC_EXT));
         _io.say.msgDebug("Trying to write: %s", f.toString());
